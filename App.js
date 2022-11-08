@@ -3,26 +3,29 @@ import { StyleSheet, Text, View, ImageBackground } from "react-native";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <ImageBackground
-        style={styles.image}
-        source={require("./assets/background_58702-2655.webp")}
-      >
+    // <View style={styles.container}>
+    <ImageBackground
+      style={styles.image}
+      source={require("./assets/background_58702-2655.webp")}
+    >
+      <View style={styles.container}>
         <View style={styles.innerBox}>
           <Text style={styles.text}>
             Open up App.js to start working on your app!
           </Text>
         </View>
         <StatusBar style="auto" />
-      </ImageBackground>
-    </View>
+      </View>
+    </ImageBackground>
+
+    // </View>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    // backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
   },
