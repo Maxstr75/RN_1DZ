@@ -1,5 +1,11 @@
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View, ImageBackground } from "react-native";
+import {
+  StyleSheet,
+  Text,
+  View,
+  ImageBackground,
+  TextInput,
+} from "react-native";
 
 export default function App() {
   return (
@@ -8,12 +14,13 @@ export default function App() {
       style={styles.image}
       source={require("./assets/3060bf968d92368179ce26a756ce4271.jpg")}
     >
-      <View style={styles.container}>
-        {/* <View style={styles.innerBox}> */}
-        {/* <Text style={styles.text}> */}
-        {/* Open up App.js to start working on your app! */}
-        {/* </Text> */}
-      </View>
+      {/* <View style={styles.container}> */}
+      <TextInput style={styles.input} />
+      {/* <View style={styles.innerBox}> */}
+      {/* <Text style={styles.text}> */}
+      {/* Open up App.js to start working on your app! */}
+      {/* </Text> */}
+      {/* </View> */}
       <StatusBar style="auto" />
       {/* </View> */}
     </ImageBackground>
@@ -24,7 +31,7 @@ export default function App() {
 
 const styles = StyleSheet.create({
   container: {
-    // flex: 1,
+    flex: 1,
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
@@ -45,5 +52,13 @@ const styles = StyleSheet.create({
     flex: 1,
     resizeMode: "cover",
     justifyContent: "center",
+    // alignItems: "center",
+  },
+  input: {
+    borderWidth: 1,
+    borderColor: "#E8E8E8",
+    height: 40,
+    borderRadius: 6,
+    marginHorizontal: 20,
   },
 });
