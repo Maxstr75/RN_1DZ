@@ -6,7 +6,7 @@ export default function App() {
     // <View style={styles.container}>
     <ImageBackground
       style={styles.image}
-      source={require("./assets/background_58702-2655.webp")}
+      source={require("./assets/3060bf968d92368179ce26a756ce4271.jpg")}
     >
       <View style={styles.container}>
         <View style={styles.innerBox}>
